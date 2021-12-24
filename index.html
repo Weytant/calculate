@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    body {
+background-image: url("1.jpg");
+
+    }
+.error {
+  color: red;
+}
+.d {
+  color: white;
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  border-width: 0;
+  margin-top: 5px;
+}
+.a {
+  width: 150px;
+  height:30px;
+}
+h1 {
+  color: white;
+}
+.sum {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 1050px;
+  top: 385px;
+}
+    </style>
+  </head>
+  <body><center>
+    <h1>Калькулятор</h1>
+<input type="text" id="calculator" readonly class="a"><br>
+<input type="button" value="1" onclick="calc(this.value)" class="d">
+<input type="button" value="2" onclick="calc(this.value)" class="d">
+<input type="button" value="3" onclick="calc(this.value)" class="d"><br>
+<input type="button" value="4" onclick="calc(this.value)" class="d">
+<input type="button" value="5" onclick="calc(this.value)" class="d">
+<input type="button" value="6" onclick="calc(this.value)" class="d"><br>
+<input type="button" value="7" onclick="calc(this.value)" class="d">
+<input type="button" value="8" onclick="calc(this.value)" class="d">
+<input type="button" value="9" onclick="calc(this.value)" class="d"><br>
+<input type="button" value="0" onclick="calc(this.value)" class="d"><br>
+<input type="button" value="+" onclick="sumb(this.value)" class="d">
+<input type="button" value="-" onclick="sumb(this.value)" class="d">
+<input type="button" value="AC" onclick="cle()" class="d">
+<p id="error" class="error"></p>
+<h1>Результат:</h1>
+<p id="sum" class="sum"></p>
+
+  </body>
+  <script src="2.js"></script>
+</html>
